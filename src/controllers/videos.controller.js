@@ -37,7 +37,8 @@ async function addNewVideo(req, res) {
 
 async function editVideo(req, res) {
     const data = await videos.read()
-    const {id, title, thumbnailUrl, duration, uploadTime, views, author, description, subscriber, isLive} = req.params
+    const {id} = req.params
+    const {title, thumbnailUrl, duration, uploadTime, views, author, description, subscriber, isLive} = req.body
 
     const updatedData = data.map(video => video.id == id ? {...video, id, title, thumbnailUrl, duration, uploadTime, views, author, description, subscriber, isLive}: video)
 
