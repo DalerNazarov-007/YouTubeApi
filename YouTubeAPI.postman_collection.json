@@ -1,0 +1,235 @@
+{
+	"info": {
+		"_postman_id": "668df21f-17f9-4f6a-8e3f-8ecf91fa6a1c",
+		"name": "YouTubeAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43268308"
+	},
+	"item": [
+		{
+			"name": "Get All Videos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:6666/videos",
+					"host": [
+						"localhost"
+					],
+					"port": "6666",
+					"path": [
+						"videos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Channels",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:6666/channels",
+					"host": [
+						"localhost"
+					],
+					"port": "6666",
+					"path": [
+						"channels"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get videos by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:6666/videos/955ae130-1354-4797-b276-4788ac5e16df",
+					"host": [
+						"localhost"
+					],
+					"port": "6666",
+					"path": [
+						"videos",
+						"955ae130-1354-4797-b276-4788ac5e16df"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get channels by ID",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Add a new video",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"title\": \"The first Blender Open Movie from 2006\",\r\n      \"thumbnailUrl\": \"https://i.ytimg.com/vi_webp/gWw23EYM9VM/maxresdefault.webp\",\r\n      \"duration\": \"12:18\",\r\n      \"uploadTime\": \"May 9, 2011\",\r\n      \"views\": \"24,969,123\",\r\n      \"author\": \"Blender Inc.\",\r\n      \"videoUrl\": \"http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4\",\r\n      \"description\": \"Song : Raja Raja Kareja Mein Samaja\\nAlbum : Raja Kareja Mein Samaja\\nArtist : Radhe Shyam Rasia\\nSinger : Radhe Shyam Rasia\\nMusic Director : Sohan Lal, Dinesh Kumar\\nLyricist : Vinay Bihari, Shailesh Sagar, Parmeshwar Premi\\nMusic Label : T-Series\",\r\n      \"subscriber\": \"25254545 Subscribers\",\r\n      \"isLive\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:6666/videos",
+					"host": [
+						"localhost"
+					],
+					"port": "6666",
+					"path": [
+						"videos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add a new channel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"channelName\": \"Dell Tech\",\r\n      \"profileImage\": \"https://example.com/images/techwiz.png\",\r\n      \"subscribers\": \"4056K Subscribers\",\r\n      \"isVerified\": true,\r\n      \"description\": \"Easy-to-follow guides on tech, gadgets, coding, and more!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:6666/channels",
+					"host": [
+						"localhost"
+					],
+					"port": "6666",
+					"path": [
+						"channels"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit a video",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"7af2dc55-3da7-41f6-bacf-1b8fc64f2d5c\",\r\n    \"title\": \"The first Blender Open Movie from 2006\",\r\n    \"thumbnailUrl\": \"https://i.ytimg.com/vi_webp/gWw23EYM9VM/maxresdefault.webp\",\r\n    \"duration\": \"12:18\",\r\n    \"uploadTime\": \"May 9, 2011\",\r\n    \"views\": \"34,969,123\",\r\n    \"author\": \"Blender Inc.\",\r\n    \"videoUrl\": \"Song : Raja Raja Kareja Mein Samaja\\nAlbum : Raja Kareja Mein Samaja\\nArtist : Radhe Shyam Rasia\\nSinger : Radhe Shyam Rasia\\nMusic Director : Sohan Lal, Dinesh Kumar\\nLyricist : Vinay Bihari, Shailesh Sagar, Parmeshwar Premi\\nMusic Label : T-Series\",\r\n    \"description\": \"25254545 Subscribers\",\r\n    \"subscriber\": \"35,000,500 subscribers\" ,\r\n    \"isLive\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:6666/videos",
+					"host": [
+						"localhost"
+					],
+					"port": "6666",
+					"path": [
+						"videos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit a channel",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"channelId\": \"9e74c3ad-ef94-43cf-bb45-4d9a50cb296d\",\r\n    \"channelName\": \"GameCraft Legends\",\r\n    \"profileImage\": \"https://example.com/images/gamecraft.png\",\r\n    \"subscribers\": \"3.4M Subscribers\",\r\n    \"isVerified\": true,\r\n    \"description\": \"Your ultimate destination for epic gameplay, walkthroughs, and live streams.\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:6666/channels",
+					"host": [
+						"localhost"
+					],
+					"port": "6666",
+					"path": [
+						"channels"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a channel",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"channelId\":\"9e74c3ad-ef94-43cf-bb45-4d9a50cb296d\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:6666/channels",
+					"host": [
+						"localhost"
+					],
+					"port": "6666",
+					"path": [
+						"channels"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a video",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"7af2dc55-3da7-41f6-bacf-1b8fc64f2d5c\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:6666/videos",
+					"host": [
+						"localhost"
+					],
+					"port": "6666",
+					"path": [
+						"videos"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
