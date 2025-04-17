@@ -6,8 +6,8 @@ const channelsRouter = express.Router()
 channelsRouter.get("/", getAllChannels)
 channelsRouter.get("/:id", getOneById)
 channelsRouter.post("/", validateChannel, addNewChannel)
-channelsRouter.put("/", editChannel)
-channelsRouter.delete("/", deleteChannel)
+channelsRouter.put("/:id", editChannel)
+channelsRouter.delete("/:id", deleteChannel)
 
 module.exports = channelsRouter
 

@@ -37,7 +37,7 @@ async function addNewVideo(req, res) {
 
 async function editVideo(req, res) {
     const data = await videos.read()
-    const {id, title, thumbnailUrl, duration, uploadTime, views, author, description, subscriber, isLive} = req.body
+    const {id, title, thumbnailUrl, duration, uploadTime, views, author, description, subscriber, isLive} = req.params
 
     const updatedData = data.map(video => video.id == id ? {...video, id, title, thumbnailUrl, duration, uploadTime, views, author, description, subscriber, isLive}: video)
 
@@ -46,7 +46,7 @@ async function editVideo(req, res) {
 }
 
 async function deleteVideo(req, res) {
-    const {id} = req.body
+    const {id} = req.params
     const data = await videos.read()
 
     const filteredData = data.filter(video => video.id !== id)

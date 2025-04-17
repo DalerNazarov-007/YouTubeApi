@@ -34,7 +34,7 @@ async function addNewChannel(req, res) {
 
 async function editChannel(req, res) {
     const data = await Channels.read()
-    const {channelId, channelName, profileImage, subscribers, isVerified, description} = req.body
+    const {channelId, channelName, profileImage, subscribers, isVerified, description} = req.params
 
     const updatedData = data.map(channel => channel.channelId == channelId ? {... channel, channelName, profileImage, subscribers, isVerified, description}: channel)
 
@@ -44,7 +44,7 @@ async function editChannel(req, res) {
 
 async function deleteChannel(req, res) {
     const data = await Channels.read()
-    const {channelId} = req.body
+    const {channelId} = req.params
 
     const filteredData = data.filter(channel => channel.channelId !== channelId)
     await Channels.write(filteredData)

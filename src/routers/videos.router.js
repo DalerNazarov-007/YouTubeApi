@@ -6,8 +6,8 @@ const videosRouter = express.Router()
 videosRouter.get("/", getAllVideos)
 videosRouter.get("/:id", getOneById)
 videosRouter.post("/", validateVideo, addNewVideo)
-videosRouter.put("/", editVideo)
-videosRouter.delete("/", deleteVideo)
+videosRouter.put("/:id", editVideo)
+videosRouter.delete("/:id", deleteVideo)
 
 
 module.exports = videosRouter
