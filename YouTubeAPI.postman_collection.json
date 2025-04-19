@@ -25,6 +25,14 @@
 			"response": []
 		},
 		{
+			"name": "Get All Comments",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
 			"name": "Get All Channels",
 			"request": {
 				"method": "GET",
@@ -37,6 +45,25 @@
 					"port": "6666",
 					"path": [
 						"channels"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get comments by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:6666/comments/56gfd40ec-84f4-44bb-9af4-b7bcb24b7e52",
+					"host": [
+						"localhost"
+					],
+					"port": "6666",
+					"path": [
+						"comments",
+						"56gfd40ec-84f4-44bb-9af4-b7bcb24b7e52"
 					]
 				}
 			},
@@ -97,6 +124,43 @@
 			"response": []
 		},
 		{
+			"name": "Add a new comment",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkRhbGVyIiwiaWF0IjoxNzQ1MDU5NDI3fQ.QcnU5VCuFembpRtLD7jNvIxz_dLqzcqYU72QkI6ruPc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"commentInsight\": \"I like it. Astonishing it is.\",\r\n    \"videoLiked\": true,\r\n    \"videoId\":\"40e86861-b236-423b-b7bf-29462c44ff01\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:6666/comments",
+					"host": [
+						"localhost"
+					],
+					"port": "6666",
+					"path": [
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Add a new channel",
 			"request": {
 				"method": "POST",
@@ -118,6 +182,44 @@
 					"port": "6666",
 					"path": [
 						"channels"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit a comment",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkRhbGVyIiwiaWF0IjoxNzQ1MDU5NDM5fQ.BTig6GrLcE3up5JgLdsB-X6xVTUoWpMv4crb6Or-UTI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"commentInsight\": \"I like it. Amazing\",\r\n    \"videoLiked\": false,\r\n    \"videoId\": \"c1c577f2-338e-444a-b058-a75ae85c2bdd\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:6666/comments/56gfd40ec-84f4-44bb-9af4-b7bcb24b7e52",
+					"host": [
+						"localhost"
+					],
+					"port": "6666",
+					"path": [
+						"comments",
+						"56gfd40ec-84f4-44bb-9af4-b7bcb24b7e52"
 					]
 				}
 			},
@@ -178,6 +280,63 @@
 			"response": []
 		},
 		{
+			"name": "Delete a video",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:6666/videos/27b86886-f4b4-4d4d-9371-62dadc7e2a46",
+					"host": [
+						"localhost"
+					],
+					"port": "6666",
+					"path": [
+						"videos",
+						"27b86886-f4b4-4d4d-9371-62dadc7e2a46"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a comment",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkRhbGVyIiwiaWF0IjoxNzQ1MDU5NDM5fQ.BTig6GrLcE3up5JgLdsB-X6xVTUoWpMv4crb6Or-UTI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:6666/comments/4340f9f0-ca1f-48b6-8973-689d0736e0ba",
+					"host": [
+						"localhost"
+					],
+					"port": "6666",
+					"path": [
+						"comments",
+						"4340f9f0-ca1f-48b6-8973-689d0736e0ba"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Delete a channel",
 			"request": {
 				"method": "DELETE",
@@ -205,29 +364,10 @@
 			"response": []
 		},
 		{
-			"name": "Delete a video",
+			"name": "New Request",
 			"request": {
-				"method": "DELETE",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"id\": \"7af2dc55-3da7-41f6-bacf-1b8fc64f2d5c\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:6666/videos",
-					"host": [
-						"localhost"
-					],
-					"port": "6666",
-					"path": [
-						"videos"
-					]
-				}
+				"method": "GET",
+				"header": []
 			},
 			"response": []
 		}

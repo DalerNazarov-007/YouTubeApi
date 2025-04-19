@@ -1,5 +1,5 @@
 class YouTubeVideo {
-    constructor (id, title, thumbnailUrl, duration, uploadTime, views, author, videoUrl, description, subscriber, isLive = true){
+    constructor (id, title, thumbnailUrl, duration, uploadTime, views, author, videoUrl, description, subscriber, isLive = true, channelId){
         this.id = id;
         this.title = title;
         this.thumbnailUrl = thumbnailUrl;
@@ -11,6 +11,7 @@ class YouTubeVideo {
         this.description = description
         this.subscriber = subscriber
         this.isLive = isLive
+        this.channelId = channelId
     }
 }
 

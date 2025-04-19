@@ -1,19 +1,6 @@
 [
   {
-    "id": "955ae130-1354-4797-b276-4788ac5e16df",
-    "title": "Big Buck Bunny",
-    "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Big_Buck_Bunny_thumbnail_vlc.png/1200px-Big_Buck_Bunny_thumbnail_vlc.png",
-    "duration": "8:18",
-    "uploadTime": "May 9, 2011",
-    "views": "24,969,500",
-    "author": "Vlc Media Player",
-    "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-    "description": "Big Buck Bunny tells the story of a giant rabbit with a heart bigger than himself. When one sunny day three rodents rudely harass him, something snaps... and the rabbit ain't no bunny anymore! In the typical cartoon tradition he prepares the nasty rodents a comical revenge.\n\nLicensed under the Creative Commons Attribution license\nhttp://www.bigbuckbunny.org",
-    "subscriber": "25254545 Subscribers",
-    "isLive": true
-  },
-  {
-    "id": "4e3284ff-2e95-4874-bc26-e101d542a0d8",
+    "videoId": "40e86861-b236-423b-b7bf-29462c44ff01",
     "title": "The first Blender Open Movie from 2006",
     "thumbnailUrl": "https://i.ytimg.com/vi_webp/gWw23EYM9VM/maxresdefault.webp",
     "duration": "12:18",
@@ -23,75 +10,11 @@
     "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
     "description": "Song : Raja Raja Kareja Mein Samaja\nAlbum : Raja Kareja Mein Samaja\nArtist : Radhe Shyam Rasia\nSinger : Radhe Shyam Rasia\nMusic Director : Sohan Lal, Dinesh Kumar\nLyricist : Vinay Bihari, Shailesh Sagar, Parmeshwar Premi\nMusic Label : T-Series",
     "subscriber": "25254545 Subscribers",
-    "isLive": true
+    "isLive": false,
+    "channelId": "1f8d40ec-84f4-44bb-9af4-b7bcb24b7e32"
   },
   {
-    "id": "ddb9d1ef-1fb1-4706-9e9a-10b1511e3e21",
-    "title": "For Bigger Escape",
-    "thumbnailUrl": "https://img.jakpost.net/c/2019/09/03/2019_09_03_78912_1567484272._large.jpg",
-    "duration": "8:18",
-    "uploadTime": "May 9, 2011",
-    "views": "24,969,123",
-    "author": "T-Series Regional",
-    "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
-    "description": " Introducing Chromecast. The easiest way to enjoy online video and music on your TV—for when Batman's escapes aren't quite big enough. For $35. Learn how to use Chromecast with Google Play Movies and more at google.com/chromecast.",
-    "subscriber": "25254545 Subscribers",
-    "isLive": false
-  },
-  {
-    "id": "7fe4e9e9-9842-4efb-a1d3-fe2cf49dd932",
-    "title": "Big Buck Bunny",
-    "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Big_Buck_Bunny_thumbnail_vlc.png/1200px-Big_Buck_Bunny_thumbnail_vlc.png",
-    "duration": "8:18",
-    "uploadTime": "May 9, 2011",
-    "views": "24,969,123",
-    "author": "Vlc Media Player",
-    "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-    "description": "Big Buck Bunny tells the story of a giant rabbit with a heart bigger than himself. When one sunny day three rodents rudely harass him, something snaps... and the rabbit ain't no bunny anymore! In the typical cartoon tradition he prepares the nasty rodents a comical revenge.\n\nLicensed under the Creative Commons Attribution license\nhttp://www.bigbuckbunny.org",
-    "subscriber": "25254545 Subscribers",
-    "isLive": true
-  },
-  {
-    "id": "ed1af232-7ef0-4ca0-92f7-fb93056ba5ec",
-    "title": "For Bigger Blazes",
-    "thumbnailUrl": "https://i.ytimg.com/vi/Dr9C2oswZfA/maxresdefault.jpg",
-    "duration": "8:18",
-    "uploadTime": "May 9, 2011",
-    "views": "24,969,123",
-    "author": "T-Series Regional",
-    "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
-    "description": "Song : Raja Raja Kareja Mein Samaja\nAlbum : Raja Kareja Mein Samaja\nArtist : Radhe Shyam Rasia\nSinger : Radhe Shyam Rasia\nMusic Director : Sohan Lal, Dinesh Kumar\nLyricist : Vinay Bihari, Shailesh Sagar, Parmeshwar Premi\nMusic Label : T-Series",
-    "subscriber": "25254545 Subscribers",
-    "isLive": false
-  },
-  {
-    "id": "e4208470-a3f1-44ea-a2ef-b9e8da4f07d5",
-    "title": "For Bigger Escape",
-    "thumbnailUrl": "https://img.jakpost.net/c/2019/09/03/2019_09_03_78912_1567484272._large.jpg",
-    "duration": "8:18",
-    "uploadTime": "May 9, 2011",
-    "views": "24,969,123",
-    "author": "T-Series Regional",
-    "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
-    "description": " Introducing Chromecast. The easiest way to enjoy online video and music on your TV—for when Batman's escapes aren't quite big enough. For $35. Learn how to use Chromecast with Google Play Movies and more at google.com/chromecast.",
-    "subscriber": "25254545 Subscribers",
-    "isLive": true
-  },
-  {
-    "id": "40e86861-b236-423b-b7bf-29462c44ff01",
-    "title": "The first Blender Open Movie from 2006",
-    "thumbnailUrl": "https://i.ytimg.com/vi_webp/gWw23EYM9VM/maxresdefault.webp",
-    "duration": "12:18",
-    "uploadTime": "May 9, 2011",
-    "views": "24,969,123",
-    "author": "Blender Inc.",
-    "videoUrl": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
-    "description": "Song : Raja Raja Kareja Mein Samaja\nAlbum : Raja Kareja Mein Samaja\nArtist : Radhe Shyam Rasia\nSinger : Radhe Shyam Rasia\nMusic Director : Sohan Lal, Dinesh Kumar\nLyricist : Vinay Bihari, Shailesh Sagar, Parmeshwar Premi\nMusic Label : T-Series",
-    "subscriber": "25254545 Subscribers",
-    "isLive": false
-  },
-  {
-    "id": "c1c577f2-338e-444a-b058-a75ae85c2bdd",
+    "videoId": "c1c577f2-338e-444a-b058-a75ae85c2bdd",
     "title": "Need for speed",
     "thumbnailUrl": "https://i.ytimg.com/vi_webp/gWw23EYM9VM/maxresdefault.webp",
     "duration": "12:00",
@@ -101,6 +24,7 @@
     "videoUrl": "Song : Raja Raja Kareja Mein Samaja\nAlbum : Raja Kareja Mein Samaja\nArtist : Radhe Shyam Rasia\nSinger : Radhe Shyam Rasia\nMusic Director : Sohan Lal, Dinesh Kumar\nLyricist : Vinay Bihari, Shailesh Sagar, Parmeshwar Premi\nMusic Label : T-Series",
     "description": "25254545 Subscribers",
     "subscriber": true,
-    "isLive": true
+    "isLive": true,
+    "channelId": "c5d1c1ba-3cd3-4caf-ad12-001db4c62a41"
   }
 ]
